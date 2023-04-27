@@ -54,7 +54,7 @@ if (cluster.isMaster) {
       // the callback will set port number and send 'message' with signal 'setPort' 
       worker.on('message', (msg) => {
         if (msg.cmd && msg.cmd === 'startServer') {
-          const port = 3000 + i; // Assign unique port number to each worker
+          const port = 3001 + i; // Assign unique port number to each worker
           worker.send({ cmd: 'setPort', port: port });
         }
       });
@@ -90,5 +90,5 @@ if (cluster.isMaster) {
     //   console.log(`Worker ${process.pid} started. Listening on port 3001...`);
     // });
     */
-   
+
   }
