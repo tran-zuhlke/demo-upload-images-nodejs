@@ -13,6 +13,8 @@ Normally, when using Homebrew, the nginx.conf is located in /opt/homebrew/etc/ng
 > brew info nginx
 ```
 
+*Then override config with file nginx.conf from repo.*
+
 To start nginx server (default is localhost:8080)
 ```console
 > sudo nginx
