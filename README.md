@@ -1,5 +1,7 @@
 # demo-upload-images-nodejs
 
+Uploading multiple images using multer (npm) and take advantages of multicore by using cluster of Node.js
+
 Install dependencies
 ```console
 > npm install express multer
